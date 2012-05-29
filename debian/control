@@ -2,7 +2,7 @@ Source: mustr
 Section: user/graphics
 Priority: extra
 Maintainer: Thomas Perl <m@thp.io>
-Build-Depends: debhelper (>= 8.0.0)
+Build-Depends: debhelper (>= 8.0.0), libqt4-dev, libgq-gconf-dev
 Standards-Version: 3.9.2
 Homepage: http://github.com/harmattan/mustr
 
