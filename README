@@ -1,0 +1,7 @@
+
+GConf Key used for background:
+    /desktop/meego/background/portrait/picture_filename
+
+Also useful - the "history" (list of strings):
+    /desktop/meego/background/portrait/history
+
