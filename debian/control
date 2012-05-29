@@ -1,0 +1,14 @@
+Source: mustr
+Section: user/graphics
+Priority: extra
+Maintainer: Thomas Perl <m@thp.io>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: http://github.com/harmattan/mustr
+
+Package: mustr
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Download wallpaper patterns from COLOURlovers
+ Browse wallpaper patterns from COLOURlovers.com and
+ download them to your device to use as lock screen image.

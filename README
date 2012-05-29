@@ -1,7 +1,12 @@
 
-GConf Key used for background:
-    /desktop/meego/background/portrait/picture_filename
+                         Mustr for MeeGo 1.2 Harmattan
+                         -----------------------------
 
-Also useful - the "history" (list of strings):
-    /desktop/meego/background/portrait/history
+ This application can be used to download patterns from COLOURlovers.com and
+ set them as lock screen wallpapers. This is basically a simple version of
+ Lucas Rocha's "Pattrn" for Android, although I have never used Pattrn myself.
+
+    Source: http://github.com/harmattan/mustr
+    Author: Thomas Perl <thp.io/about>
+    License: GPLv3 or later
 
