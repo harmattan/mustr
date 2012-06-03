@@ -307,7 +307,7 @@ PageStackWindow {
                     }
 
                     Label {
-                        text: 'Author: Thomas Perl\nLicense: GNU GPL v3 or later\nPatterns by COLOURlovers.com\nLicense of patterns: CC-BY-NC-SA\nhttp://github.com/harmattan/mustr\n\nInspired by Lucas Rocha\'s "Pattrn" app'
+                        text: 'Author: Thomas Perl\nLicense: GNU GPL v3 or later\nPatterns by COLOURlovers.com\nLicense of patterns: CC-BY-NC-SA\nhttp://thp.io/2012/mustr/\n\nInspired by Lucas Rocha\'s "Pattrn" app\nIcon by The Best Isaac'
                     }
                 }
             }

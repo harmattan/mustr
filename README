@@ -6,6 +6,9 @@
  set them as lock screen wallpapers. This is basically a simple version of
  Lucas Rocha's "Pattrn" for Android, although I have never used Pattrn myself.
 
+ The application icon has been designed by The Best Isaac on talk.maemo.org.
+
+    Website: http://thp.io/2012/mustr/
     Source: http://github.com/harmattan/mustr
     Author: Thomas Perl <thp.io/about>
     License: GPLv3 or later
