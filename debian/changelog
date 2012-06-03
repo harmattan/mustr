@@ -1,3 +1,9 @@
+mustr (1.0.1) harmattan; urgency=low
+
+  * New application icon
+
+ -- Thomas Perl <m@thp.io>  Sun, 03 Jun 2012 11:58:40 +0200
+
 mustr (1.0.0) harmattan; urgency=low
 
   * Initial Release.
