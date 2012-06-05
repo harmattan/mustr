@@ -26,6 +26,26 @@ PageStackWindow {
         orientationLock: PageOrientation.LockPortrait
 
         tools: ToolBarLayout {
+            ButtonRow {
+                anchors.left: parent.left 
+                style: TabButtonStyle { } 
+                TabButton { 
+                    text: "Top" 
+                    tab: tab1
+                    onClicked: { 
+                        listModel.category = ''
+                        listmodel.page = 0
+                    }
+                }
+                TabButton { 
+                   text: "New" 
+                   tab: tab2 
+                   onClicked: {
+                       listModel.category = '/new'
+                       listModel.page = 0
+                   }
+                }
+            }
             ToolIcon {
                 anchors.right: parent.right
                 iconId: 'toolbar-view-menu'
@@ -88,8 +108,9 @@ PageStackWindow {
 
                 property int perPage: 20
                 property int page: 0
+                property string category: ''
 
-                source: 'http://www.colourlovers.com/api/patterns?numResults=' + perPage + '&resultOffset=' + (perPage * page)
+                source: 'http://www.colourlovers.com/api/patterns' + category +'?numResults=' + perPage + '&resultOffset=' + (perPage * page)
                 onSourceChanged: console.log('src: ' + source)
                 query: '/patterns/pattern'
 
