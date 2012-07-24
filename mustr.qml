@@ -27,22 +27,22 @@ PageStackWindow {
 
         tools: ToolBarLayout {
             ButtonRow {
-                anchors.left: parent.left 
-                style: TabButtonStyle { } 
-                TabButton { 
-                    text: "Top" 
+                anchors.left: parent.left
+                style: TabButtonStyle { }
+                TabButton {
+                    text: 'Top'
                     tab: tab1
-                    onClicked: { 
-                        listModel.category = ''
-                        listmodel.page = 0
+                    onClicked: {
+                        listModel.category = '';
+                        listModel.page = 0;
                     }
                 }
-                TabButton { 
-                   text: "New" 
-                   tab: tab2 
+                TabButton {
+                   text: 'New'
+                   tab: tab2
                    onClicked: {
-                       listModel.category = '/new'
-                       listModel.page = 0
+                       listModel.category = '/new';
+                       listModel.page = 0;
                    }
                 }
             }
@@ -57,6 +57,13 @@ PageStackWindow {
             id: contextMenu
 
             MenuLayout {
+                MenuItem {
+                    text: 'Get more apps'
+                    onClicked: {
+                        Qt.openUrlExternally('http://store.ovi.com/publisher/Thomas+Perl/');
+                        contextMenu.close();
+                    }
+                }
                 MenuItem {
                     text: 'About Mustr'
                     onClicked: pageStack.push(aboutPage)
@@ -311,7 +318,7 @@ PageStackWindow {
                     }
 
                     Label {
-                        text: 'Mustr 1.0.0'
+                        text: 'Mustr 1.0.1'
                         font.pixelSize: 40
                         font.bold: true
                         anchors.horizontalCenter: parent.horizontalCenter
@@ -328,7 +335,7 @@ PageStackWindow {
                     }
 
                     Label {
-                        text: 'Author: Thomas Perl\nLicense: GNU GPL v3 or later\nPatterns by COLOURlovers.com\nLicense of patterns: CC-BY-NC-SA\nhttp://thp.io/2012/mustr/\n\nInspired by Lucas Rocha\'s "Pattrn" app\nIcon by The Best Isaac'
+                        text: 'Author: Thomas Perl\nLicense: GNU GPL v3 or later\nPatterns by COLOURlovers.com\nLicense of patterns: CC-BY-NC-SA\nhttp://thp.io/2012/mustr/\n\nInspired by Lucas Rocha\'s "Pattrn" app\nIcon by The Best Isaac\nTab support by Seppo Tomperi'
                     }
                 }
             }

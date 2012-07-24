@@ -1,8 +1,9 @@
 mustr (1.0.1) harmattan; urgency=low
 
-  * New application icon
+  * New application icon (by The Best Isaac)
+  * Tabs for New and Top patterns (by Seppo Tomperi)
 
- -- Thomas Perl <m@thp.io>  Sun, 03 Jun 2012 11:58:40 +0200
+ -- Thomas Perl <m@thp.io>  Tue, 24 Jul 2012 10:55:11 +0200
 
 mustr (1.0.0) harmattan; urgency=low
 
