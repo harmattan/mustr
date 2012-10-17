@@ -61,14 +61,13 @@ class Wallpaper : public QObject {
             painter->fillRect(image.rect(), QBrush(pattern));
             delete painter;
 
-            QDir dir(QDir::home().filePath(".config/mustr"));
+            QDir dir(QDir::home().filePath("MyDocs/.wallpapers"));
             dir.mkpath(".");
-
-            QString filename = dir.filePath(base + ".png");
+            QString filename = dir.filePath("mustr_" + base + ".png");
             image.save(filename);
             m_backgroundItem.set(filename);
-
             emit done();
+
         }
 
     signals:
