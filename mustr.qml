@@ -318,7 +318,7 @@ PageStackWindow {
                     }
 
                     Label {
-                        text: 'Mustr 1.0.1'
+                        text: 'Mustr 1.0.2'
                         font.pixelSize: 40
                         font.bold: true
                         anchors.horizontalCenter: parent.horizontalCenter
@@ -335,7 +335,7 @@ PageStackWindow {
                     }
 
                     Label {
-                        text: 'Author: Thomas Perl\nLicense: GNU GPL v3 or later\nPatterns by COLOURlovers.com\nLicense of patterns: CC-BY-NC-SA\nhttp://thp.io/2012/mustr/\n\nInspired by Lucas Rocha\'s "Pattrn" app\nIcon by The Best Isaac\nTab support by Seppo Tomperi'
+                        text: 'Author: Thomas Perl\nLicense: GNU GPL v3 or later\nPatterns by COLOURlovers.com\nLicense of patterns: CC-BY-NC-SA\nhttp://thp.io/2012/mustr/\n\nInspired by Lucas Rocha\'s "Pattrn" app\nIcon by The Best Isaac\nTab support by Seppo Tomperi\n\nPatches by:\nAndrew Olmsted'
                     }
                 }
             }
