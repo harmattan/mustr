@@ -3,7 +3,11 @@ TEMPLATE = app
 
 QT += network declarative
 CONFIG += link_pkgconfig
-PKGCONFIG += gq-gconf
+
+contains(MEEGO_EDITION,harmattan) {
+    PKGCONFIG += gq-gconf
+    DEFINES += HAVE_GQ_GCONF
+}
 
 DEPENDPATH += .
 INCLUDEPATH += .

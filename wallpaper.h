@@ -22,7 +22,10 @@
 
 #include <QtGui>
 #include <QtNetwork>
-#include <GConfItem>
+
+#ifdef HAVE_GQ_GCONF
+#  include <GConfItem>
+#endif
 
 #define MEEGO_SCREEN_WIDTH 480
 #define MEEGO_SCREEN_HEIGHT 854
@@ -33,9 +36,11 @@ class Wallpaper : public QObject {
 
     public:
         Wallpaper(QObject *parent=NULL)
-            : QObject(parent),
-              m_networkAccessManager(),
-              m_backgroundItem(BACKGROUND_KEY)
+            : QObject(parent)
+            , m_networkAccessManager()
+#ifdef HAVE_GQ_GCONF
+            , m_backgroundItem(BACKGROUND_KEY)
+#endif
         {
             connect(&m_networkAccessManager, SIGNAL(finished(QNetworkReply*)),
                     this, SLOT(finished(QNetworkReply*)));
@@ -65,7 +70,9 @@ class Wallpaper : public QObject {
             dir.mkpath(".");
             QString filename = dir.filePath("mustr_" + base + ".png");
             image.save(filename);
+#ifdef HAVE_GQ_GCONF
             m_backgroundItem.set(filename);
+#endif
             emit done();
 
         }
@@ -75,7 +82,9 @@ class Wallpaper : public QObject {
 
     private:
         QNetworkAccessManager m_networkAccessManager;
+#ifdef HAVE_GQ_GCONF
         GConfItem m_backgroundItem;
+#endif
 };
 
 #endif
