@@ -31,7 +31,12 @@ int main(int argc, char *argv[])
     Wallpaper *wallpaper = new Wallpaper(&view);
     view.rootContext()->setContextProperty("wallpaper", wallpaper);
     view.setSource(QUrl("qrc:/mustr.qml"));
+
+#if defined(MEEGO_EDITION_HARMATTAN)
     view.showFullScreen();
+#else
+    view.show();
+#endif
 
     return app.exec();
 }
