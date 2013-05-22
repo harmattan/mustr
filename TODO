@@ -1,0 +1,4 @@
+- Pan, pinch and rotate using touch gestures to modify offset/scaling/rotation
+- Control repeat behavior (no repeat, x-repeat, y-repeat, x/y-repeat)
+- Determine background color from border of pattern images
+- Allow changing of colors / hue for on-device pattern customization
